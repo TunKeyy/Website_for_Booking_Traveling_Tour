@@ -1,0 +1,683 @@
+/* --------------------------------------------------SLIDER------------------------------------------------------- */
+/* điều chỉnh lại các thuộc tính trong bootstrap của Đạt*/
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4%;
+    height: 8%;
+    opacity: 1;
+    /* top và transform là dùng để căn giữa */
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* các class đã tạo trong phần của Đạt */
+/* caption */
+.caption {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    /* top, left và transform là dùng để căn giữa */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel_explore_btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    transition: background-image 0.5s linear;
+    border-image-slice: 1;
+}
+
+.carousel_explore_btn:hover {
+    background-image: linear-gradient(to right, #8d4fff, orange);
+}
+
+/* xong phần caption */
+/* hai nút chuyển slide */
+.carousel_control_btn_custom {
+    border: 0.2rem solid white;
+    border-radius: 12px;
+    margin: 0 2rem;
+}
+
+.carousel_control_btn_custom:hover {
+    cursor: pointer;
+    border-image: linear-gradient(to right, orange, #8d4fff);
+    border-image-slice: 1;
+}
+
+/* xong hai nút chuyển slide */
+/* 3 nút chuyển slide */
+.carousel_slide_control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 16rem;
+    height: 2rem;
+    margin: 0 2rem 2rem 0;
+}
+
+.carousel_slide_btn {
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+}
+
+.carousel_slide_btn:hover {
+    cursor: pointer;
+    border-image: linear-gradient(to right, orange, #8d4fff);
+    border-image-slice: 1;
+}
+
+/* xong 3 nút chuyển slide */
+/* ------------------------------------------------------OPTION-FORM--------------------------------------------- */
+.option_form {
+    height: 10rem;
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upper_form {
+    position: absolute;
+    height: 5rem;
+    top: -5rem;
+}
+
+.upper_form button {
+    height: inherit;
+    padding: 2rem;
+    width: max-content;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin: 0 -4px;
+    font-size: 1.2rem;
+}
+
+.upper_form button:hover {
+    background-color: #fa9e1b;
+    color: white;
+}
+
+.upper_form button:first-child {
+    border-top-left-radius: 50px;
+}
+
+.upper_form button:last-child {
+    border-top-right-radius: 50px;
+}
+
+.option_form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 1rem;
+    color: white;
+}
+
+.option_form form input {
+    height: 2rem;
+    width: 10rem;
+    margin: 1rem 0;
+}
+
+.option_form form input[type^="Submit"] {
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(65, 2, 65);
+    border: none;
+    margin: 2rem 0 2rem 3rem;
+}
+
+.option_form form input[type^="Submit"]:hover {
+    background-color: #74482f;
+}
+
+/* -----------------------------------------------------BEST TOUR------------------------------------------------ */
+/* điều chỉnh lại các thuộc tính trong bootstrap của Đạt*/
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* các class đã tạo trong phần của Đạt */
+.best_tour {
+    margin-bottom: 6rem;
+}
+
+.best_tour_desc {
+    text-align: center;
+}
+
+.best_tour_desc h2 {
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.best_tour_desc p {
+    width: 70vw;
+    margin: 3rem auto;
+    line-height: 30px;
+    color: thistle;
+    font-size: 1.5rem;
+    font-style: italic
+}
+
+.card-body {
+    color: white;
+}
+
+.card_picture_1 {
+    background-image: url(/front/images/img/xintro_1.jpg.pagespeed.ic.vc2WNRX2pm.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.card_picture_2 {
+    background-image: url(/front/images/img/xintro_2.jpg.pagespeed.ic.T0_SEU16mo.webp);
+    background-size: cover;
+    height: 35rem;
+}
+
+.card_picture_3 {
+    background-image: url(/front/images/img/xintro_3.jpg.pagespeed.ic.56ahj3oq2s.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.best_tour_date {
+    background-color: #fa9e1c;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    margin: auto;
+}
+
+.bi-star-fill {
+    color: #d8d7d1;
+    font-size: 1.5rem;
+}
+
+.bi-star-fill:hover {
+    color: rgb(233, 114, 71);
+}
+
+.color_star_1 {
+    color: #ffeb8d;
+}
+
+.color_star_2 {
+    color: #fed46b;
+}
+
+.color_star_3 {
+    color: #fbb53d;
+}
+
+.color_star_4 {
+    color: #fa9e1b;
+}
+
+.best_tour_btn {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    transition: background-image 0.5s linear;
+    border-image-slice: 1;
+    margin: auto;
+}
+
+.best_tour_btn:hover {
+    background-image: linear-gradient(to right, #8d4fff, orange);
+}
+
+/* ------------------------------------------------------------------ DELUXE PACKAGE------------------------------------------- */
+/* dùng thẻ deluxe_package làm nền bên dưới sau đó cho thẻ img đè lên trên */
+.deluxe_package {
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    height: 50rem;
+    position: relative;
+}
+
+.deluxe_package img {
+    height: 50rem;
+    opacity: 0.5;
+}
+
+.deluxe_content {
+    position: absolute;
+    width: 80%;
+    height: 40rem;
+    background-color: white;
+    text-align: center;
+    padding: 4rem;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.deluxe_package h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.deluxe_rate {
+    margin: 1rem;
+}
+
+.deluxe_package p {
+    font-size: 1.5rem;
+    margin: 0 0 4rem 0;
+}
+
+.deluxe_package_btn {
+    width: 16rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    transition: background-image 0.5s linear;
+    border-image-slice: 1;
+    margin: auto;
+}
+
+.deluxe_package_btn:hover {
+    background-image: linear-gradient(to right, #8d4fff, orange);
+}
+
+/* ----------------------------------------------------------------THE BEST OFFERS WITH ROOMS----------------------------------------- */
+.best_offers,
+.offer_body {
+    background-color: whitesmoke;
+}
+
+.best_offers h2 {
+    padding: 3rem 0;
+}
+
+.img-fluid_custom {
+    max-width: 100%;
+    height: 100%;
+}
+
+.offer_img {
+    position: relative;
+}
+
+.img_location {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    color: black;
+    background-color: rgb(255, 165, 38);
+    bottom: 10%;
+    text-align: center;
+    line-height: 2;
+}
+
+.offer_title {
+    color: rgb(237, 168, 74);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.offer_title span {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.offer_content {
+    font-size: 1rem;
+}
+
+.offer_read_more {
+    color: black;
+    text-decoration: none;
+}
+
+.offer_read_more:hover {
+    color: rgb(237, 168, 74);
+}
+
+/* -------------------------------------------------------------------------------------------------RESPONSIVE--------------------------------------------------------- */
+@media (max-width :1024px) and (min-width:740px) {
+    html {
+        font-size: 10px;
+    }
+
+    .option_form {
+        flex-direction: column;
+        height: 90rem;
+    }
+
+    .upper_form {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .upper_form button {
+        padding: 2rem;
+        width: 80rem;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .upper_form button:first-child,
+    .upper_form button:last-child {
+        border-radius: 0;
+    }
+
+    .upper_form button i {
+        color: #fa9e1b;
+    }
+
+    .option_form form {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .option_form form input {
+        width: 80rem;
+        height: 3rem;
+    }
+
+    .option_form form input[type^="Submit"] {
+        margin: 2rem 4rem 2rem 0;
+        width: 12rem;
+    }
+
+    .img_location {
+        position: absolute;
+        width: 25%;
+        height: 10%;
+        color: black;
+        background-color: rgb(255, 165, 38);
+        bottom: 10%;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 2;
+    }
+}
+
+@media (max-width:740px) {
+    html {
+        font-size: 6px;
+    }
+
+    .option_form {
+        flex-direction: column;
+        height: 90rem;
+    }
+
+    .upper_form {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .upper_form button {
+        padding: 2rem;
+        width: 80rem;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .upper_form button:first-child,
+    .upper_form button:last-child {
+        border-radius: 0;
+    }
+
+    .upper_form button i {
+        color: #fa9e1b;
+    }
+
+    .option_form form {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .option_form form input {
+        width: 80rem;
+        height: 3rem;
+    }
+
+    .option_form form input[type^="Submit"] {
+        width: 12rem;
+        margin: 2rem 4rem 2rem 0;
+    }
+
+    .offer_title {
+        font-size: 4rem;
+    }
+
+    .offer_title span {
+        font-size: 2.8rem;
+    }
+
+    .offer_rate,
+    .offer_icon {
+        font-size: 2.8rem;
+    }
+
+    .offer_content {
+        font-size: 3rem;
+    }
+
+    .offer_read_more {
+        font-size: 2.8rem;
+    }
+
+    .img_location {
+        position: absolute;
+        width: 25%;
+        height: 5%;
+        color: black;
+        background-color: rgb(255, 165, 38);
+        top: 56%;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 2;
+    }
+}
+
+
+/* <!-- WHAT OUR CLIENTS SAY ABOUT US --> */
+
+.client-say {
+    margin-top: 100px;
+}
+
+.client-say__item {
+    margin: 100px;
+}
+
+.item__img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item__img-icon {
+    width: 75px;
+    height: 75px;
+    background-color: orange;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.row__item {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 10px;
+}
+
+.item__img-icon {
+    position: absolute;
+    padding-top: 20px;
+    top: -40px;
+    left: 40px;
+}
+
+.img__bg {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 50%;
+    background-color: rgba(49, 18, 75, .8);
+    border-radius: 8px;
+
+}
+
+.square-text {
+    position: absolute;
+    width: 150px;
+    height: 62px;
+    top: -34px;
+    line-height: 0.5;
+    background-color: white;
+    margin-left: 35px;
+
+}
+
+.row__item-text {
+    color: white;
+    margin-right: 50px;
+    margin-left: 35px;
+    padding-top: 50px;
+}
+
+.bold-text {
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 17px;
+}
+
+.square-text .day {
+    font-size: 13px;
+    padding-left: 17px;
+}
+
+.after-client {
+    background: linear-gradient(to right, #f18a02, #c1a0f5);
+    height: 2px;
+}
+
+/* TRENDING NOW */
+
+.trending-now {
+    margin: 100px;
+}
+
+.trending-now-title {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.row__items {
+    display: flex;
+
+}
+
+.row__items img {
+    border-radius: 3px;
+}
+
+.row__items-info {
+    padding-left: 20px;
+
+}
+
+.row__items-info a {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.row__items-info p {
+    line-height: 0.5;
+}
+
+.price {
+    color: orange;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.four-items {
+    margin-bottom: 50px;
+}
+
+/* Form: get in touch */
+.form-getintouch {
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    background: linear-gradient(to right, orange, #8d4fff);
+    border-radius: 8px;
+    color: white;
+    margin: auto;
+    font-weight: 400;
+}
+
+.form-getintouch h2 {
+    padding-bottom: 30px;
+}
+
+.form-btn {
+    background: #8d4fff;
+    color: white;
+    margin-top: 20px;
+}
+
+.div-btn {
+    text-align: center;
+}
+
+.form-btn:hover {
+    background: #702af1;
+}

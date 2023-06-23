@@ -1,0 +1,139 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+#header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+
+
+/* Navigation */
+.head-nav {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 12px;
+    min-height: 50px;
+    background-color: rgb(54,1,92);
+    color: #FFFFFF;
+    width: 100%;
+    padding: 12px 0 0 0;
+    z-index: 1000;
+}
+
+.main-nav-bar {
+    background-color: rgb(66,11,105);
+    position: fixed;
+    z-index: 1;
+    top: 48px;
+    opacity: 0.8;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight:900;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.logo-icon {
+    font-size: 48px;
+}
+
+.logo-head{
+    letter-spacing: 4px;
+    margin-left: 16px;
+    margin-top: -20px;
+}
+
+
+.flash_message_box {
+    position: fixed;
+    height: 25%;
+    width: 50%;
+    background-color: rgb(54, 1, 92);
+    top: 25%;
+    left: 25%;
+}
+
+.flash_message_text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: medium;
+    font-weight: bold;
+    color: orange;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE */
+.topnav .icon {
+    display: none;
+  }
+
+.main-nav-bar a:hover {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, orange, #8d4fff);
+    border-image-slice: 1;
+    padding-bottom: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1036px) {
+
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+  }
+
+}
+
+@media screen and (max-width: 1036px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 100%;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
